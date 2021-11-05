@@ -18,7 +18,7 @@ const HomePage = () => {
   const [showUp, setShowUp] = useState(true);
   const handleOptionClick = () => {
     setShowUp(!showUp);
-  }
+  };
   return (
     <div className="home-wrapper" id="home">
       <div className="home-navbar">
@@ -61,7 +61,11 @@ const HomePage = () => {
               <img src={focus} alt="img" />
             </div>
             <div className="feature-desc">
-              Get your all projects detail and task assigned to you at one place
+              <span className="feature-desc-title">All at one place</span>
+              <span className="feature-desc-sub-title">
+                Get your all projects detail and task assigned to you at one
+                place
+              </span>
             </div>
           </div>
           <div className="feature-card">
@@ -69,16 +73,28 @@ const HomePage = () => {
               <img src={progress} alt="img" />
             </div>
             <div className="feature-desc">
-              Track every bit of your project and visualize its progress
+              <span className="feature-desc-title">Easy to keep track</span>
+              <span className="feature-desc-sub-title">
+                Track every bit of your project and visualize its progress
+              </span>
             </div>
           </div>
           <div className="feature-card">
             <div className="feature-img img3">
-              <img src={list} alt="img" />
+              <img
+                src={list}
+                alt="img"
+                style={{ width: "400px", height: "300px" }}
+              />
             </div>
             <div className="feature-desc">
-              An organised board for all the task related to a project at one
-              place
+              <span className="feature-desc-title">
+                Create multiple project and manage
+              </span>
+              <span className="feature-desc-sub-title">
+                An organised board for all the task related to a project at one
+                place
+              </span>
             </div>
           </div>
         </div>

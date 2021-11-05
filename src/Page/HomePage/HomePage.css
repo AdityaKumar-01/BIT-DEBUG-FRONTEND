@@ -12,6 +12,7 @@
 }
 .home-wrapper {
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
 }
 .home-navbar {
@@ -45,6 +46,7 @@
   text-decoration: none;
   color: #343f56;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .nav-btn {
   display: flex;
@@ -75,7 +77,7 @@
 
 .home-content {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 
 .hero-text {
@@ -85,7 +87,7 @@
 }
 
 .display-text {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 5%;
 }
 
@@ -104,7 +106,8 @@
 
 .about-wrapper {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  justify-content: space-between;
 }
 
 .header {
@@ -121,42 +124,38 @@
 .feature-row {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-top: 10%;
+  
 }
 .feature-card {
-  height: 100%;
-  margin: 5%;
-  width: 50%;
-  background-color: #cfcfcfb0;
-  border-radius: 10px;
-  padding: 1%;
-  border: 3px solid transparent;
-  transition: background-color 0.5s;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-evenly;
+  margin: 10px;
+  margin-bottom:5%;
 }
-.feature-card:hover {
-  background-color: transparent;
-  border: 2px solid #cfcfcfb0;
-  transition: background-color 0.5s;
-}
-.feature-card:hover .feature-desc {
-  color: #f54748;
-  transition: color 0.3s;
+.feature-card:nth-child(even) {
+  flex-direction: row-reverse;
 }
 .feature-img img {
-  width: 200px;
-  height: 130px;
+  width: 420px;
+  height: 250px;
 }
 .feature-desc {
-  text-align: center;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
+.feature-desc-title{
+  font-size: 25px;
+  color:#f54748;
+  font-weight: bold;
+  margin-bottom:10px;
+}
 .form-wrapper,
 .form-content,
 .form-body,
@@ -170,6 +169,7 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  margin-top:45%;
 }
 .form-content {
   justify-content: space-around;
@@ -216,7 +216,7 @@
 .footer {
   flex-direction: column;
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   background-color: #343f56;
 }
 
@@ -228,7 +228,7 @@
 .footer-logo img {
   width: 200px;
   height: 70px;
-  margin: 2%;
+  margin: 10%;
 }
 
 .footer-links {
