@@ -4,7 +4,7 @@ import GroupsRoundedIcon from "@mui/icons-material/GroupsRounded";
 const Boards = () => {
   return (
     <div className="assigned-container">
-      <span className="util-title">Worked On</span>
+      <span className="util-title">Recent</span>
       <div className="assigned-card">
         <TableChartRoundedIcon sx={{ color: "#343f56" }} />
         <div className="assgined-card-info">

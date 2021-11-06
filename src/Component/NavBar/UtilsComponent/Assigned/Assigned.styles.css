@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .assigned-card,.assigned-card-detail,.person-stats{

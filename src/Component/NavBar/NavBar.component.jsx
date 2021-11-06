@@ -9,6 +9,7 @@ import "./NavBar.styles.css";
 import Boards from "./UtilsComponent/Boards/Boards.util";
 import Recent from "./UtilsComponent/Recent/Recent.util";
 import Assigned from "./UtilsComponent/Assigned/Assigned.util";
+import Project from './UtilsComponent/Project/Project.util';
 
 const NavBar = () => {
   const [work, setWork] = useState(false);
@@ -86,15 +87,13 @@ const NavBar = () => {
 
           {project ? (
             <div className="navbar-dropdown">
-              <div className="navbar-dropdown-item">dsd</div>
-              <div className="navbar-dropdown-item">sd</div>
-              <div className="navbar-dropdown-item">sdsd</div>
+              <Project/>
             </div>
           ) : null}
         </div>
         <div className="navbar-options">
           <div className="navbar-tiles" onClick={() => handleClick("people")}>
-            <p>Your work</p>
+            <p>People</p>
             <KeyboardArrowDownIcon />
           </div>
 
