@@ -61,7 +61,10 @@ const DashboardPage = () => {
       <div className="dashboard-content">
         <div className="dashboard-title ">Your Work</div>
         <div className="dashboard-recent-projects">
-          <div className="util-title">Recent projects</div>
+          <div className="util-title" style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+            Recent projects
+            <button className="view-proj-btn">View all projects</button>
+          </div>
           <div className="recent-projects-container">
             {prj.map((obj) => {
               return (
@@ -75,8 +78,9 @@ const DashboardPage = () => {
             })}
           </div>
         </div>
+
         <div className="dashboard-meta">
-          <div className="meta-options" style={{ margin: "10px 0" }}>
+          <div className="meta-options" style={{ margin: "20px 0" }}>
             <span
               className={metaOption === 0 ? "active-meta-option" : ""}
               onClick={() => setMetaOption(0)}

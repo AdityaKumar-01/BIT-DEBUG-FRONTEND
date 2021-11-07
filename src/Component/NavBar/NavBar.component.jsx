@@ -2,15 +2,18 @@ import { useState, useEffect, useRef } from "react";
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import Modal from "@mui/material/Modal";
 
 import logo from "../../assets/logoFull.png";
 
-import "./NavBar.styles.css";
 import Boards from "./UtilsComponent/Boards/Boards.util";
 import Recent from "./UtilsComponent/Recent/Recent.util";
 import Assigned from "./UtilsComponent/Assigned/Assigned.util";
 import Project from "./UtilsComponent/Project/Project.util";
 import People from "./UtilsComponent/People/People.util";
+import Create from "./UtilsComponent/Create/Create.util";
+
+import "./NavBar.styles.css";
 
 const NavBar = () => {
   const [work, setWork] = useState(false);
@@ -40,11 +43,10 @@ const NavBar = () => {
        */
       function handleClickOutside(event) {
         if (ref.current && !ref.current.contains(event.target)) {
-          console.log(work,project,people)
-           setWork(false);
-           setProject(false);
-           setPeople(false);
-          
+          console.log(work, project, people);
+          setWork(false);
+          setProject(false);
+          setPeople(false);
         }
       }
 
@@ -58,6 +60,10 @@ const NavBar = () => {
   }
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div className="navbar-container">
       <div>
@@ -129,6 +135,23 @@ const NavBar = () => {
             </div>
           ) : null}
         </div>
+        <div className="navbar-create-btn">
+          <button
+            className="view-proj-btn"
+            onClick={() => handleOpen()}
+            style={{ width: "70px" }}
+          >
+            Create
+          </button>
+        </div>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Create handleClose={handleClose} />
+        </Modal>
         <div className="navbar-options">
           <AccountCircleIcon sx={{ fontSize: "35px" }} />
         </div>
