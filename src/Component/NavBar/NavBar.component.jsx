@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logoFull.png";
 
 import "./NavBar.styles.css";
 import Boards from "./UtilsComponent/Boards/Boards.util";

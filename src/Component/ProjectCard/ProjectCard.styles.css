@@ -1,0 +1,50 @@
+.project-card-container,.card-issues-tab,.issues-chips{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.project-card-detail,.card-title{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    
+}
+.project-card-container{
+    width:auto;
+    box-shadow: 0 0 3px gray;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 400;
+    margin:20px;
+    padding: 0.5% 3% 0.5% 0.5%;
+    transition: all 0.3s;
+    background-color: #F54748;
+    cursor: pointer;
+}
+
+.project-card-container:hover{
+    box-shadow: 0 0 10px gray;
+    transition: all 0.2s;
+}
+.project-card-detail{
+    margin-left:20px;
+}
+.card-title{
+    font-weight: 500;
+}
+
+.card-issues-tab{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-issues-tab p{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px 7px;
+    margin-left:10px;
+}
+.issues-chips{
+    align-items: center;
+    margin: 3px 0;
+}

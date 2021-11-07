@@ -1,4 +1,26 @@
-.dashboard-wrapper{
+.dashboard-container,.dashboard-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-container{
     width:100%;
+}
+.dashboard-content{
+    padding: 0 3%
+}
+.dashboard-title{
+    font-size: 25px;
+    margin : 10px 0;
+}
+
+.recent-projects-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dashboard-recent-projects{
+    margin: 10px 0;
 }
 

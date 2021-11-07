@@ -4,7 +4,7 @@ import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";
 import insta from "react-useanimations/lib/instagram";
 import linkdin from "react-useanimations/lib/linkedin";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logoFull.png";
 import scrum from "../../assets/scrum.png";
 import focus from "../../assets/focus.png";
 import list from "../../assets/list.png";
@@ -44,7 +44,10 @@ const HomePage = () => {
       </div>
       <div className="home-content">
         <div className="hero-text">
-          <p className="display-text">Your one solution for tracking bugs</p>
+          <p className="display-text">
+            Your one solution for tracking every{" "}
+            <span style={{ color: "#f54748" }}>#BYTE </span>of your project
+          </p>
           <span className="nav-btn">
             <a href="#form-section">Get Started</a>
           </span>
@@ -134,7 +137,7 @@ const HomePage = () => {
           </div>
           <div className="footer-links">
             <a
-              href="https://github.com/AdityaKumar-01/bit-debug"
+              href="https://github.com/AdityaKumar-01/BYTE-TRACKER-FRONTEND"
               target="_blank"
             >
               <UseAnimations

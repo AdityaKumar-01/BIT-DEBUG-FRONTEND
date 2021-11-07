@@ -6,14 +6,22 @@
 }
 
 .navbar-logo {
-  width: 150px;
+  width: 175px;
   height: 65px;
+  margin-left: 20px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 .left-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 30%;
   margin-right: 100px;
 }
 
@@ -21,6 +29,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  
 }
 .navbar-tiles:hover {
   background-color: #cececea9;
@@ -37,7 +46,7 @@
   background-color: white;
 }
 .navbar-tiles {
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -46,12 +55,12 @@
   height: 30px;
   padding: 10px;
   border-radius: 5px;
-   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
