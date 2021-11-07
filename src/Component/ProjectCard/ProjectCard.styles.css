@@ -39,7 +39,8 @@
 }
 
 .card-issues-tab p{
-    background-color: white;
+    background-color: #343F56;
+    color:white;
     border-radius: 10px;
     padding: 1px 7px;
     margin-left:10px;

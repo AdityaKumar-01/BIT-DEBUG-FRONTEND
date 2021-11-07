@@ -24,3 +24,12 @@
     margin: 10px 0;
 }
 
+.meta-options span{
+    margin: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+.active-meta-option{
+    background-color: #cececea9;
+}

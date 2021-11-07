@@ -1,0 +1,22 @@
+.dashboard-meta-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+}
+
+.dashboard-meta-card-container {
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dashboard-meta-card-container:hover {
+  background-color: #cececea9;
+}
+.meta-card:hover {
+  background-color: transparent;
+}
+
+.meta-col{
+    width:33%;
+}

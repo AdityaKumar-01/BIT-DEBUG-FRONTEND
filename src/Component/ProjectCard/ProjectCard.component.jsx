@@ -14,6 +14,7 @@ const ProjectCard = ({ title, type, issues, boards }) => {
         className="card-avatar"
         round={true}
         style={{ fontSize: "20px", padding: "10px" }}
+        color="#343F56"
       />
       <div className="project-card-detail">
         <span className="card-title">
@@ -45,7 +46,7 @@ const ProjectCard = ({ title, type, issues, boards }) => {
         {/* <hr style={{ width: "100%", margin: "10px 0", backgroundColor: "black",outline:"none" }} /> */}
         <span className="issues-chips">
           <span>{boards.length} boards</span>
-          <ArrowDropDownIcon sx={{ fontSize: "10px" }} />
+          <ArrowDropDownIcon sx={{ fontSize: "15px" }} />
         </span>
       </div>
     </div>
