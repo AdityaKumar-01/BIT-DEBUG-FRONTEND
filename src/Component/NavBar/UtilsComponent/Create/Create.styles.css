@@ -6,7 +6,8 @@
   align-items: center;
 }
 .form-holder,
-.form-inputs,.type-card {
+.form-inputs,
+.type-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,18 +18,28 @@
   height: auto;
   min-width: 40%;
   padding: 3%;
+  overflow-y: scroll;
+  border-radius: 10px;
 }
-.form-selector,.type-card-holder,.form-btn {
+.form-selector,
+.type-card-holder,
+.form-btn,
+.select-issue-container,
+.issue-type-card {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.form-selector{
-    margin-top:10px;
+.form-selector {
+  margin-top: 10px;
+}
+
+.form-selector span {
+  cursor: pointer;
 }
 .form-types-holder {
   width: 100%;
-  margin : 10px 0 
+  margin: 10px 0;
 }
 .form-title {
   text-transform: uppercase;
@@ -42,47 +53,59 @@
 }
 .input-label-bind {
   margin: 15px 0;
-  width:100%;
+  width: 100%;
 }
 
-.type-card{
-    border-radius:5px;
-    padding: 2%;
-    margin: 7px;
-    border: 1px solid black;
-    cursor: pointer;
+.type-card {
+  border-radius: 5px;
+  padding: 2%;
+  margin: 7px;
+  border: 1px solid black;
+  cursor: pointer;
 }
-.active-card-type{
-    background-color:#343F56;
-    color:#ffff;
+.active-card-type {
+  background-color: #343f56;
+  color: #ffff;
 }
 .type-card img {
-    width:200px;
-    height:120px;
+  width: 200px;
+  height: 110px;
 }
-.type-card-holder{
-    width:100%;
+.type-card-holder {
+  width: 100%;
 }
-.type-card button{
-    outline:none;
-    border:none;
-    border-radius: 5px;
-    padding: 3%;
-    width: 100px;
-    background-color: rgb(180, 180, 180);
-    color:black;
+.type-card button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 3%;
+  width: 100px;
+  background-color: rgb(180, 180, 180);
+  color: black;
+  cursor: pointer;
 }
 
-.type-card button , .type-card p{
-    margin : 5px 0;
-    font-size: 15px;
+.type-card button,
+.type-card p {
+  margin: 5px 0;
+  font-size: 15px;
 }
-.input{
-    border:0.5px solid black;
-    outline:none;
-    border-radius: 5px;
-    margin-left: 10px;
-    height:30px;
-    width: 400px;
-    padding-left:10px;
+.input {
+  border: 0.5px solid black;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 30px;
+  width: 400px;
+  padding-left: 10px;
+}
+.select-issue-container {
+  width: 30%;
+  margin: 10px 0;
+}
+.issue-type-card {
+  align-items: center;
+  margin: 0 10px;
+  justify-content: flex-start;
+  cursor: pointer;
 }

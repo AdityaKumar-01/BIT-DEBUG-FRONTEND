@@ -4,6 +4,7 @@ import sprint from "../../../../assets/sprint.png";
 import bug from "../../../../assets/bug.png";
 const CreateProject = ({ handleClose }) => {
   const [err, setErr] = useState("");
+  
   const [activeCard, setCard] = useState(null);
   return (
     <Formik
