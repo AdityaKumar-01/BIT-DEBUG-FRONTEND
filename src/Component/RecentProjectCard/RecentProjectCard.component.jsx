@@ -4,8 +4,8 @@ import BugReportIcon from "@mui/icons-material/BugReport";
 
 import Avatar from "react-avatar";
 
-import "./ProjectCard.styles.css";
-const ProjectCard = ({ title, type, issues, boards }) => {
+import "./RecentProjectCard.styles.css";
+const RecentProjectCard = ({ title, type, issues, boards }) => {
   return (
     <div className="project-card-container">
       <Avatar
@@ -53,4 +53,4 @@ const ProjectCard = ({ title, type, issues, boards }) => {
   );
 };
 
-export default ProjectCard;
+export default RecentProjectCard;

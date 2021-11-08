@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./DashboardPage.css";
 
 import NavBar from "./../../Component/NavBar/NavBar.component";
-import ProjectCard from "./../../Component/ProjectCard/ProjectCard.component";
+import RecentProjectCard from "./../../Component/RecentProjectCard/RecentProjectCard.component";
 import DashboardMetaCard from "./UtilsComponents/DashboardMetaCard/DashboardMetaCard.util";
 
 const DashboardPage = () => {
@@ -61,14 +61,21 @@ const DashboardPage = () => {
       <div className="dashboard-content">
         <div className="dashboard-title ">Your Work</div>
         <div className="dashboard-recent-projects">
-          <div className="util-title" style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+          <div
+            className="util-title"
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
             Recent projects
             <button className="view-proj-btn">View all projects</button>
           </div>
           <div className="recent-projects-container">
             {prj.map((obj) => {
               return (
-                <ProjectCard
+                <RecentProjectCard
                   title={obj.title}
                   type={obj.type}
                   issues={obj.issues}

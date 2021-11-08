@@ -1,0 +1,56 @@
+.project-page-content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.project-table {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.popover-body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+
+  width: 150px;
+  height: 100px;
+}
+
+.popover-body span {
+  margin: 5px 0;
+  padding: 3%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popover-body span:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.formatter-container {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.project-table tr {
+  height: 40px;
+}
+.project-table th {
+  text-transform: uppercase;
+  color: gray;
+}
+.project-option:hover {
+  background-color: rgb(212, 212, 212);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
